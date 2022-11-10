@@ -19,7 +19,8 @@
                             <button class="btn" onclick="location.href='@Url.Action("Create","Student")'" style="font-style:oblique;border:10px;background:black;color:white;"><i class="fa fa-plus-circle"></i>   Add New</button>
                         </div>
                     </nav>
-                    <table class="table table-borderless" cellspacing="0" width="100%" style="font-style:oblique;">
+                    <div class="card-body" data-mdb-perfect-scrollbar="true" style="position: relative; height: 400px; overflow:auto">
+                    <table class="table table-borderless"  cellspacing="0" width="100%" style="font-style:oblique;">
                         <thead>
                             <tr>
                                 <th>First Name</th>
@@ -28,8 +29,8 @@
                                 <th>Gender</th>
                                 <th>Department</th>
                                 <th>class</th>
-                                <th>Year of Joining</th>
                                 <th>Location</th>
+                                <th>Year of Joining</th>
                                 <th>Action</th>
                             </tr>
                          </thead>
@@ -75,6 +76,7 @@
                           </tbody>
                        
                     </table>
+                    </div>
                 </div>
             </div>
         </div>

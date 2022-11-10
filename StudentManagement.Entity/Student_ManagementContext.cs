@@ -24,6 +24,7 @@ namespace StudentManagement.Entity
         {
             if (!optionsBuilder.IsConfigured)
             {
+ 
                 optionsBuilder.UseSqlServer("Data Source=(localdb)\\MSSqlLocalDb;Initial Catalog=Student_Management;Integrated Security=True");
             }
         }
@@ -66,7 +67,8 @@ namespace StudentManagement.Entity
                 entity.Property(e => e.Student_Location)
                     .IsRequired()
                     .HasMaxLength(10)
-                    .IsUnicode(false);
+                    .IsUnicode(false)
+                    .HasDefaultValueSql("('-')");
 
                 entity.Property(e => e.Updated_Time_Stamp)
                     .HasColumnType("datetime")
